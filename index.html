@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summer Sports Gala Registration</title>
+    <style>
+        #sidebar {
+            width: 200px; /* Adjust the width of the sidebar as needed */
+        }
+
+        #sidebar img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <img src="altern.jpg" alt="Summer Sports Gala Image">
+    </div>
+
+    <div id="content">
+        <h1>Welcome to the Summer Sports Gala Registration</h1>
+        <p>Please fill out the following information to register:</p>
+
+        <form action="/submit" method="POST">
+            <!-- Username input -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            
+            <br>
+
+            <!-- Password input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <br>
+
+            <!-- Email input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <br>
+
+            <!-- Gender dropdown -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <br>
+
+            <!-- Select sport -->
+            <label for="sport">Select a Sport:</label>
+            <select id="sport" name="sport" required>
+                <option value="volleyball">Volleyball</option>
+                <option value="futsal">Soccer</option>
+                <option value="cricket">Swimming</option>
+                <option value="basketball">Basketball</option>
+            </select>
+            
+            <br>
+
+            <!-- Checkboxes for events -->
+            <label>Events:</label>
+            <input type="checkbox" id="event1" name="events[]" value="100m Race">
+            <label for="event1">100m Race</label>
+            <input type="checkbox" id="event2" name="events[]" value="Long Jump">
+            <label for="event2">Long Jump</label>
+            <input type="checkbox" id="event3" name="events[]" value="Chess">
+            <label for="event3">Chess</label>
+            
+            <br>
+
+            <!-- Textarea for additional comments -->
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any additional comments or special requests?"></textarea>
+            
+            <br>
+
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
